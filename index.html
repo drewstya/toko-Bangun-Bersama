@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <meta name="google-site-verification" content="google9af86886dab5fd81" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bangun Bersama Store</title>
@@ -75,6 +76,7 @@
       max-width: 500px;
       margin-right: 2rem;
       border-radius: 10px;
+      animation: fadeIn 1.2s ease-in-out;
     }
     .hero-text {
       max-width: 500px;
@@ -102,6 +104,11 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
       padding: 1rem;
       text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
     .product img {
       width: 100%;
@@ -122,6 +129,12 @@
       border-radius: 5px;
       text-decoration: none;
       font-size: 0.9rem;
+    }
+    .product img.animated {
+      transition: transform 0.5s ease;
+    }
+    .product img.animated:hover {
+      transform: scale(1.05) rotate(1deg);
     }
     .contact {
       padding: 2rem;
@@ -164,6 +177,10 @@
       text-align: center;
       padding: 1rem;
     }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
@@ -184,22 +201,22 @@
     <h2>Produk Unggulan</h2>
     <div class="product-grid">
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1598300054353-2994b9bb38ba" alt="Pintu Kayu">
+        <img class="animated" src="https://images.unsplash.com/photo-1598300054353-2994b9bb38ba" alt="Pintu Kayu">
         <h3>Pintu Kayu</h3>
         <p>Pintu kayu solid cocok untuk rumah klasik dan modern.</p>
-        <a href="#">Lihat Detail</a>
+        <a href="https://wa.me/6287808466677?text=Halo%2C+saya+tertarik+dengan+Pintu+Kayu">Lihat Detail</a>
       </div>
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Pintu Kaca">
+        <img class="animated" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Pintu Kaca">
         <h3>Pintu Kaca</h3>
         <p>Pintu kaca dengan desain minimalis cocok untuk ruang tamu atau kantor.</p>
-        <a href="#">Lihat Detail</a>
+        <a href="https://wa.me/6287808466677?text=Halo%2C+saya+tertarik+dengan+Pintu+Kaca">Lihat Detail</a>
       </div>
       <div class="product">
-        <img src="https://images.unsplash.com/photo-1616486238993-d6d3bc9c7e1b" alt="Pintu Besi">
+        <img class="animated" src="https://images.unsplash.com/photo-1616486238993-d6d3bc9c7e1b" alt="Pintu Besi">
         <h3>Pintu Besi</h3>
         <p>Pintu besi yang kokoh dan aman, ideal untuk garasi atau pintu belakang.</p>
-        <a href="#">Lihat Detail</a>
+        <a href="https://wa.me/6287808466677?text=Halo%2C+saya+tertarik+dengan+Pintu+Besi">Lihat Detail</a>
       </div>
     </div>
   </section>
@@ -207,7 +224,7 @@
   <section class="contact">
     <h2>Kontak Kami</h2>
     <p>Alamat: Jl. Raya Merdeka No.46b, Karawaci, Tangerang</p>
-    <p>WhatsApp: <a href="https://wa.me/6287808466677">0878-0856-6677</a></p>
+    <p>WhatsApp: <a href="https://wa.me/6287808466677">0878-0846-6677</a></p>
     <p>Email: <a href="mailto:drewstya@gmail.com">drewstya@gmail.com</a></p>
     <a href="https://www.google.com/maps?q=Jl+Raya+Merdeka+No+46b,+Karawaci,+Tangerang" class="location-button" target="_blank">Arahkan ke Lokasi</a>
   </section>
