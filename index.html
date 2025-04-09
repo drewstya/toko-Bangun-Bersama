@@ -119,13 +119,23 @@
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       margin-top: 2rem;
     }
     .map {
       width: 100%;
       height: 300px;
       border: none;
+      margin-top: 1rem;
+    }
+    .location-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #28a745;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -174,7 +184,9 @@
   </section>
 
   <footer id="kontak">
+    <p>Alamat: Jl. Raya Bangun Bersama No. 88, Jakarta Barat</p>
     <p>Hubungi kami di: <a style="color:#fff" href="https://wa.me/6287808566677">0878-0856-6677</a> | email@example.com</p>
+    <a class="location-button" href="https://www.google.com/maps/dir/?api=1&destination=-6.175279060509932,106.62527257387626" target="_blank">Arahkan ke Lokasi</a>
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6672759779035!2d106.62527257387626!3d-6.175279060509932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ffa20888a71b%3A0x70fdaee9f7afbe81!2sBangun%20Bersama%20Store!5e0!3m2!1sid!2sid!4v1744200000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </footer>
 </body>
